@@ -7,14 +7,14 @@ namespace TP.Models
 {
     public class Veiculo
     {
-        public int veiculoID { get; set; }
+        public int VeiculoID { get; set; }
 
-        public int bateria { get; set; }
+        public int Bateria { get; set; }
 
-        public TipoVeiculo TipoVeiculo { get; set; }
+        public TipoVeiculo Tipo { get; set; }
 
-        public string VeiculoLocalizacao { get; set; }
+        public string Localizacao { get; set; }
 
-        public string utilizadorID { get; set; }
+        public string UtilizadorID { get; set; }
     }
 }

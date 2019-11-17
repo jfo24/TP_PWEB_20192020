@@ -5,9 +5,9 @@ using System.Web;
 
 namespace TP.Models
 {
-    public class utilizador
+    public class Utilizador
     {
-        public int utilizadorID { get; set; }
+        public int UtilizadorID { get; set; }
 
         public string Nome { get; set; }
 
