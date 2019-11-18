@@ -23,7 +23,7 @@ namespace TP
                       "~/Scripts/bootstrap.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap-litera.css",
+                      "~/Content/bootstrap-paper.css",
                       "~/Content/site.css"));
         }
     }

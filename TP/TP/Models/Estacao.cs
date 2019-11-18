@@ -7,7 +7,7 @@ namespace TP.Models
 {
     public class Estacao
     {
-        public int EstacaoID { get; set; }
+        public int ID { get; set; }
 
         public string Localizacao { get; set; }
 
