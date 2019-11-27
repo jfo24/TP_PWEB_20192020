@@ -27,7 +27,7 @@ namespace TP.Controllers
             return View();
         }
 
-        public ActionResult estacoes()
+        public ActionResult Estacoes()
         {
             return View();
         }
