@@ -12,8 +12,8 @@
 
     <div class="container fixed-top">
         <ul class="nav nav-tabs">
-            <li>@*<a href="#home" data-toggle="tab">Sobre Nós</a>*@@Html.ActionLink("Sobre Nós", "About")</li>
-            <li>@*<a href="#profile" data-toggle="tab">Estações Elétricas</a>*@@Html.ActionLink("Estações Elétricas", "estacoes")</li>
+            <li>@*<a href="#home" data-toggle="tab">Sobre Nós</a>*@@Html.ActionLink("Sobre Nós", "About", "Home")</li>
+            <li>@*<a href="#profile" data-toggle="tab">Estações Elétricas</a>*@@Html.ActionLink("Estações Elétricas", "estacoes", "Home")</li>
             <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                     Veículos<span class="caret"></span>
@@ -27,7 +27,7 @@
             <li>
                 <a href="@Url.Action("Index", "Home")"> <img src="/img/logotipo.jpg" style="max-width:100px; margin-top: -40px;" alt="Company logo" width="50" height="50" /></a>
             </li>
-            <li class="nav navbar-nav navbar-right"><a href="#Login" data-toggle="tab">Login</a></li>
+            <li class="nav navbar-nav navbar-right">@*<a href="#Login" data-toggle="tab">Login</a>*@ @Html.ActionLink("Login", "login","Account")</li>
             <li class="dropdown nav navbar-nav navbar-right">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                     Junte-se A Nós<span class="caret"></span>
