@@ -13,20 +13,6 @@ namespace TP.Controllers
             return View();
         }
 
-        public ActionResult About()
-        {
-            ViewBag.Message = "a descrição da página da tua aplicação.";
-
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
-        }
-
         public ActionResult Estacoes()
         {
             return View();

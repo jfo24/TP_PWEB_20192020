@@ -14,12 +14,12 @@ namespace TP.Controllers
             return View();
         }
 
-        public ActionResult login()
+        public ActionResult Login()
         {
             return View();
         }
 
-        public ActionResult registo()
+        public ActionResult RegistoCliente()
         {
             return View();
         }
