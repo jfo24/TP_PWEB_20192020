@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Green Charge</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+
+    <div class="container fixed-top">
+        <ul class="nav nav-tabs">
+            <li>@*<a href="#home" data-toggle="tab">Sobre Nós</a>*@@Html.ActionLink("Sobre Nós", "About", "Home")</li>
+            <li>@*<a href="#profile" data-toggle="tab">Estações Elétricas</a>*@@Html.ActionLink("Estações Elétricas", "estacoes", "Home")</li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    Veículos<span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#Carros" data-toggle="tab">Carros</a></li>
+                    <li><a href="#Motas" data-toggle="tab">Motas</a></li>
+                    <li><a href="#Trotinetes" data-toggle="tab">Trotinetes</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="@Url.Action("Index", "Home")"> <img src="/img/logotipo.jpg" style="max-width:100px; margin-top: -40px;" alt="Company logo" width="50" height="50" /></a>
+            </li>
+            <li class="nav navbar-nav navbar-right">@*<a href="#Login" data-toggle="tab">Login</a>*@ @Html.ActionLink("Login", "login", "Account")</li>
+            <li class="dropdown nav navbar-nav navbar-right">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    Junte-se A Nós<span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#dropdown3" data-toggle="tab">Como Cliente</a></li>
+                    <li><a href="#dropdown4" data-toggle="tab">Como Empresa</a></li>
+                    <li><a href="#dropdown5" data-toggle="tab">Como Particular</a></li>
+                </ul>
+            </li>
+            <li class="dropdown nav navbar-nav navbar-right">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    Proprietários<span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#Empresas" data-toggle="tab">Empresas</a></li>
+                    <li><a href="#Particulares" data-toggle="tab">Particulares</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="container body-content">
+        @RenderBody()
+    </div>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
