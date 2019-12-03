@@ -1,0 +1,45 @@
+﻿@model IEnumerable<TPVersao4.Models.Aluguer>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Cliente.ClienteNome)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Proprietario.ProprietarioNome)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Veiculo.VeiculoID)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Cliente.ClienteNome)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Proprietario.ProprietarioNome)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Veiculo.VeiculoID)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.AluguerId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.AluguerId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.AluguerId })
+        </td>
+    </tr>
+}
+
+</table>
