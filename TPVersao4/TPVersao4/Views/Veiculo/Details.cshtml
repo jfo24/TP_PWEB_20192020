@@ -1,0 +1,42 @@
+﻿@model TPVersao4.Models.Veiculo
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Veiculo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TipoVeiculo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TipoVeiculo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VeiculoPreco)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VeiculoPreco)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VeiculoBateria)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VeiculoBateria)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.VeiculoID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
