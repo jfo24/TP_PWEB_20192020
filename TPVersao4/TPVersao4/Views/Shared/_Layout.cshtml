@@ -28,9 +28,10 @@
                     }
                     else if (Request.IsAuthenticated && User.IsInRole("Cliente"))
                     {
+
                         <li>@Html.ActionLink("Veiculos", "Index", "VeiculoController")</li>
-                        <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                        <li>@Html.ActionLink("About", "About", "Home")</li>
+                        <li>@Html.ActionLink("Aluguers", "Index", "AluguersController")</li>
+                        
                     }
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                     <li>@Html.ActionLink("About", "About", "Home")</li>
