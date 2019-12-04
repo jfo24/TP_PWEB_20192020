@@ -1,0 +1,42 @@
+﻿@model TPVersao4.Models.Estacao
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>@Html.DisplayFor(model => model.EstacaoNome)</h2>
+
+<div>
+    <h4>Detalhes</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.EstacaoNome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EstacaoNome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EstacaoLocalizacao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EstacaoLocalizacao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EstacaoNumVeiculos)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EstacaoNumVeiculos)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.EstacaoID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

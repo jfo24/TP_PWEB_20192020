@@ -1,0 +1,39 @@
+﻿@model IEnumerable<TPVersao4.Models.Veiculo>
+
+@{
+    ViewBag.Title = "List";
+}
+
+<h2>Veiculos Disponíveis</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.TipoVeiculo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.VeiculoPreco)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.VeiculoBateria)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TipoVeiculo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VeiculoPreco)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VeiculoBateria)
+            </td>
+        </tr>
+    }
+
+</table>
+

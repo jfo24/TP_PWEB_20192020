@@ -23,16 +23,18 @@
                     @if (Request.IsAuthenticated && User.IsInRole("Admin"))
                     {
                         <li>@Html.ActionLink("Roles", "Index", "RolesAdmin")</li>
-                        <li>@Html.ActionLink("Create", "Create", "RolesAdmin")</li>
+                        <li>@Html.ActionLink("Estações", "Index", "Estacao")</li>
 
                     }
                     else if (Request.IsAuthenticated && User.IsInRole("Cliente"))
                     {
 
-                        <li>@Html.ActionLink("Veiculos", "Index", "VeiculoController")</li>
+                        <li>@Html.ActionLink("Veiculos", "List", "VeiculoController")</li>
                         <li>@Html.ActionLink("Aluguers", "Index", "AluguersController")</li>
-                        
+                        <li>@Html.ActionLink("Estações", "List", "Estacao")</li>
+
                     }
+
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                 </ul>

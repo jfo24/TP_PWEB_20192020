@@ -105,3 +105,4 @@ C:\Users\joao_\Desktop\Isec\3º ano\Programação Web\TP_1920\TP_PWEB_20192020\T
 C:\Users\joao_\Desktop\Isec\3º ano\Programação Web\TP_1920\TP_PWEB_20192020\TPVersao4\TPVersao4\obj\Debug\TPVersao4.pdb
 C:\Users\joao_\Desktop\Isec\3º ano\Programação Web\TP_1920\TP_PWEB_20192020\TPVersao4\TPVersao4\obj\Debug\TPVersao4.Migrations.InitialModel.resources
 C:\Users\joao_\Desktop\Isec\3º ano\Programação Web\TP_1920\TP_PWEB_20192020\TPVersao4\TPVersao4\obj\Debug\TPVersao4.csproj.GenerateResource.cache
+C:\Users\joao_\Desktop\Isec\3º ano\Programação Web\TP_1920\TP_PWEB_20192020\TPVersao4\TPVersao4\obj\Debug\TPVersao4.Migrations.SecondModel.resources

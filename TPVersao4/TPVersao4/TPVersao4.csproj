@@ -171,6 +171,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AluguersController.cs" />
+    <Compile Include="Controllers\EstacaoController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\InitAdminController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -183,6 +184,10 @@
     <Compile Include="Migrations\201912031220249_InitialModel.cs" />
     <Compile Include="Migrations\201912031220249_InitialModel.designer.cs">
       <DependentUpon>201912031220249_InitialModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201912041212029_SecondModel.cs" />
+    <Compile Include="Migrations\201912041212029_SecondModel.designer.cs">
+      <DependentUpon>201912041212029_SecondModel.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -280,6 +285,13 @@
     <Content Include="Views\InitAdmin\Success.cshtml" />
     <Content Include="Views\InitAdmin\Index.cshtml" />
     <Content Include="Views\InitAdmin\Error.cshtml" />
+    <Content Include="Views\Estacao\Create.cshtml" />
+    <Content Include="Views\Estacao\Delete.cshtml" />
+    <Content Include="Views\Estacao\Details.cshtml" />
+    <Content Include="Views\Estacao\Edit.cshtml" />
+    <Content Include="Views\Estacao\Index.cshtml" />
+    <Content Include="Views\Veiculo\List.cshtml" />
+    <Content Include="Views\Estacao\List.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -300,6 +312,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201912031220249_InitialModel.resx">
       <DependentUpon>201912031220249_InitialModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201912041212029_SecondModel.resx">
+      <DependentUpon>201912041212029_SecondModel.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

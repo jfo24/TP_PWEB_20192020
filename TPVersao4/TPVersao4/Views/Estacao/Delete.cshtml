@@ -1,0 +1,48 @@
+﻿@model TPVersao4.Models.Estacao
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Estacao</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.EstacaoNome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EstacaoNome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EstacaoLocalizacao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EstacaoLocalizacao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EstacaoNumVeiculos)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EstacaoNumVeiculos)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

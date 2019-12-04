@@ -20,6 +20,11 @@ namespace TPVersao4.Controllers
             return View(db.Veiculos.ToList());
         }
 
+        public ActionResult List()
+        {
+            return View(db.Veiculos.ToList());
+        }
+
         // GET: Veiculo/Details/5
         public ActionResult Details(int? id)
         {

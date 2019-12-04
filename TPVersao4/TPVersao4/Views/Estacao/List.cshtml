@@ -1,0 +1,40 @@
+﻿@model IEnumerable<TPVersao4.Models.Estacao>
+
+@{
+    ViewBag.Title = "List";
+}
+
+<h2>Estações</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.EstacaoNome)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EstacaoLocalizacao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EstacaoNumVeiculos)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.EstacaoNome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EstacaoLocalizacao)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EstacaoNumVeiculos)
+            </td>
+
+        </tr>
+    }
+
+</table>
+
